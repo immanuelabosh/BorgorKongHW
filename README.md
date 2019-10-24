@@ -18,3 +18,5 @@ Features:
   - Maximum code reuse to improve simplicity (only 1 recycler adapter and recycler item view)
   - Fully functional backstack
   - Comments in the code
+  - the action bar title changes depending on where you are 
+
