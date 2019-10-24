@@ -3,6 +3,7 @@ package com.example.borgorkonghw;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 /***
@@ -46,7 +47,7 @@ public class FakeDatabase {
         }
     }
 
-    private static HashMap<Integer, Food> foods = new HashMap<>();
+    private static LinkedHashMap<Integer, Food> foods = new LinkedHashMap<>();
 
     static {
         foods.put(1, new Food(
