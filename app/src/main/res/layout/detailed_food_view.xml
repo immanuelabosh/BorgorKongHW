@@ -21,28 +21,14 @@
                 android:adjustViewBounds="true"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/name"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="TextView"
-                    android:textSize="24sp"
-                    android:transitionName="name" />
-
-                <TextView
-                    android:id="@+id/price"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:text="TextView"
-                    android:textSize="12sp" />
-            </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="24sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -57,14 +43,13 @@
 
                 <TextView
                     android:id="@+id/quantity"
-                    android:layout_width="18dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
                     android:background="@drawable/rect_border"
                     android:gravity="center"
-                    android:text="TextView"
-                    app:autoSizeTextType="uniform" />
+                    android:text="TextView" />
 
                 <ImageView
                     android:id="@+id/increment"
@@ -77,7 +62,7 @@
                 android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="20dp"
                 android:text="TextView" />
 
         </LinearLayout>

@@ -28,7 +28,6 @@ public class DetailedFoodView extends AppCompatActivity {
 
         TextView name = findViewById(R.id.name);
         TextView description = findViewById(R.id.description);
-        TextView price = findViewById(R.id.price);
         ImageView image = findViewById(R.id.imageView);
         ImageView incBttn = findViewById(R.id.increment);
         ImageView decBttn = findViewById(R.id.decrement);
@@ -37,11 +36,8 @@ public class DetailedFoodView extends AppCompatActivity {
 
         //set the text and images
         this.setTitle(foodObject.getName());
-        name.setText(foodObject.getName());
-        name.setTextColor(Color.BLACK);
-        name.setTypeface(null, Typeface.BOLD);
+        name.setText(foodObject.getName() + "\n\n$" + foodObject.getPrice());
         description.setText(foodObject.getDescription());
-        price.setText("$" + foodObject.getPrice());
         quantity = foodObject.getQuantity();
         displayQuant();
         image.setImageResource(foodObject.getImageDrawableId());
