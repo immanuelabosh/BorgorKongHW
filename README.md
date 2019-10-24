@@ -1,6 +1,7 @@
 # BorgorKongHW
 HW Assignment 2 for 3634
 Please read me before using, this explains a number of the apps features.
+
 Features:
   - You can tap a burger to edit its quantity and then just back out and its quantity will have been saved
   - Burger quantities can be edited from the order screen as well, just tap a burger in the order screen to edit its quantity
